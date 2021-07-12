@@ -1,0 +1,214 @@
+/******************************************************************
+
+Stylesheet: 1200px以上のモニタで適用
+
+******************************************************************/
+.header {
+  height: 100px;
+
+  & .mobile-container {
+    height: 100px;
+  }
+
+  & .inview {
+    &.logo {
+      margin: 3.3vw 0 0 7vw;
+      height: 55px;
+      width: 200px;
+    }
+  }
+
+  & .mobile-button {
+    top: 50px;
+    right: 100px;
+  }
+}
+
+//top
+.top {
+  margin-top: 50px;
+
+  .bg-cover {
+    bottom: -10vw;
+  }
+
+  & .swiper-container {
+    height: 70vh;
+
+    & .view-sp {
+      display: none;
+    }
+  }
+}
+
+//concept
+.concept {
+  &__inner {
+    padding-top: 5vw;
+  }
+
+  .gallery__img {
+    width: 35%;
+  }
+
+  &__block {
+    text-align: center;
+    padding: 0 10vw;
+  }
+}
+
+//menu
+.menu {
+  padding-top: 5vw;
+
+  &__li {
+    width: 30%;
+
+    &__block {
+      margin: 0 auto;
+    }
+
+    & p {
+      margin: 4vw 0;
+      text-align: center;
+    }
+
+    &:last-of-type {
+      margin-top: 2vw;
+    }
+  }
+}
+
+//service
+.service {
+  &__img {
+    width: 80%;
+    height: 400px;
+  }
+
+  &__block {
+    & .service__item {
+      & li {
+        height: 200px;
+      }
+    }
+  }
+
+}
+
+.accordion {
+  &__btn {
+    margin: 4vw auto;
+  }
+}
+
+.staff {
+  & .swiper-slide {
+    &__box {
+      display: flex;
+      align-items: center;
+      padding-top: 0 !important;
+    }
+
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    & button {
+      font-size: 22px;
+    }
+  }
+}
+
+//insta
+.instagram {
+  &__img {
+    width: 23%;
+    height: auto;
+  }
+}
+
+//#news
+.p-news {
+  padding: 10vw 0 5vw 0;
+
+  & .c-container {
+    padding: 0 10vw;
+  }
+
+  &__item {
+    padding: 3vw 5vw;
+  }
+
+  &__tit {
+    padding-top: 2vw;
+  }
+
+  &__list {
+    padding-bottom: 5vw;
+  }
+
+  & .more-link {
+    font-size: 1.4rem;
+  }
+}
+
+//.footer
+.footer {
+  &__inner {
+    height: 15vw;
+  }
+}
+
+//* * * * * * recruit-page * * * * * * *
+.c-recruit {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding-top: 0;
+}
+
+//* * * * * * news-page * * * * * * *
+.superwrapper {
+  .c-news {
+    padding-top: 10vw;
+
+    &__title {
+      margin-bottom: 5vw;
+    }
+
+    &__list {
+      font-size: 1.5rem;
+
+      & a {
+        padding: 3vw 0 3vw 5vw;
+      }
+    }
+
+    & .page-numbers {
+      margin: 8vw 0;
+      font-size: 1rem;
+    }
+  }
+
+}
+
+//* * * * * * news-sl-page * * * * * * *
+.c-news-sl {
+  padding-bottom: 5vw;
+
+  & .c-container {
+    padding: 0 12vw;
+  }
+
+  &__list {
+    padding-top: 6vw;
+  }
+
+  &__contents {
+    padding: 6vw 0;
+
+    & p {
+      font-size: 1.1rem;
+    }
+  }
+}

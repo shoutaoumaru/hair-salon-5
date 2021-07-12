@@ -1,0 +1,178 @@
+/******************************************************************
+
+Stylesheet: 960px以上のモニタで適用
+
+******************************************************************/
+
+.header {
+  height: auto;
+  width: 100%;
+
+  & .mobile-container {
+    display: none;
+  }
+
+  & .logo {
+    margin: 3.3vw 0 0 7vw;
+    height: 55px;
+    width: 150px;
+  }
+
+  & .pc-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10vw 0 0;
+
+    & .pc-nav {
+      padding-top: 50px;
+
+      &-list {
+        display: flex;
+        justify-content: flex-end;
+      }
+
+      &-item {
+        font-size: 1.4rem;
+        padding-left: 5vw;
+
+        & a {
+          color: $cBlack;
+        }
+      }
+
+      &.inview {
+        & .pc-nav-item {
+          & a {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+
+  & .mobile-button {
+    top: 50px;
+    right: 100px;
+  }
+
+  & .sp-navbtn {
+    display: none;
+  }
+}
+
+//top
+.top {
+  & .bg-cover {
+    height: 50vh;
+    bottom: -20vw;
+  }
+}
+
+//.concept
+.concept {
+  &__inner {
+    padding-top: 20vw;
+  }
+}
+
+//.service
+.service {
+  &__item {
+    & li {
+      height: 200px;
+    }
+  }
+}
+
+//.instagram
+.instagram {
+  &__img {
+    height: 250px;
+  }
+}
+
+//mobile-menu
+.mobile-menu {
+  &__ul {
+    padding-top: 30vw;
+  }
+}
+
+//news-page 
+.c-news {
+  & .c-title02 {
+    font-size: 1.8rem;
+  }
+
+  &__link {
+    font-size: 1.3rem;
+  }
+}
+
+//* * * * * * recruite-page * * * * * * *
+.c-recruit {
+  padding: 5vw 0 10vw 0;
+
+  &__title {
+    & p {
+      font-size: .9rem;
+    }
+  }
+
+  &__list {
+    margin-top: 5vw;
+  }
+
+  &__item {
+    font-size: 1rem;
+  }
+
+  &__btn {
+    display: none;
+  }
+}
+
+//* * * * * * news-sl-page * * * * * * *
+.c-news-sl {
+  padding-top: 5vw;
+
+  & .c-container {
+    font-size: 1.4rem;
+    padding: 10vw 20vw;
+  }
+
+  .c-title02 {
+    & .txt {
+      font-size: 2rem;
+    }
+  }
+
+  &__title {
+    & span {
+      font-size: 1.6rem;
+    }
+
+    & p {
+      font-size: 1.4rem;
+    }
+  }
+
+  &__list {
+    padding-top: 6vw;
+  }
+
+  &__contents {
+    font-size: 1.4rem;
+    line-height: 3;
+  }
+
+  &__date {
+    font-size: 1.6rem;
+  }
+
+  & .more-link {
+    & span {
+      font-size: 1.2rem;
+    }
+  }
+}

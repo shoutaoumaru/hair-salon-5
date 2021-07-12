@@ -1,0 +1,363 @@
+/******************************************************************
+
+Stylesheet: 600px以上のモニタで適用
+
+******************************************************************/
+.header {
+  & .inview {
+    &.logo {
+      margin: 3.3vw 0 0 7vw;
+      height: 44px;
+      width: 120px;
+    }
+  }
+
+  & .mobile-button {
+    top: 35px;
+    right: 50px;
+  }
+}
+
+//top
+.top {
+  & .swiper-container {
+    height: 75vh;
+    width: 80%;
+    text-align: center;
+  }
+
+  & .swiper-slide {
+    height: 100%;
+  }
+
+  & .bg-cover {
+    height: 50vh;
+    bottom: -30vw;
+  }
+}
+
+//concept
+.concept {
+  padding-top: 15vw;
+
+  & p {
+    font-size: 1rem;
+  }
+
+  &__img-block {
+    padding: 0 10vw 10vw 10vw;
+  }
+
+  &__block {
+    margin: 0 10vw 10vw 10vw;
+  }
+
+  &__num {
+    font-size: 1.4rem;
+  }
+
+  &__inner {
+    padding-top: 25vw;
+  }
+
+  & .gallery {
+    &__img {
+      height: 220px;
+      width: 50%;
+    }
+  }
+}
+
+//menu
+.menu {
+  &__ul {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  &__li {
+    width: 45%;
+    padding: 10px;
+    margin-bottom: 0;
+
+    &:last-of-type {
+      margin-top: 8vw;
+      line-height: 2.5;
+    }
+  }
+
+  &__inner {
+    margin: 0 10vw;
+  }
+
+  &__num {
+    font-size: 1.4rem;
+  }
+
+  &__block {
+    font-size: 1.2rem;
+  }
+
+  & p {
+    margin: 6vw 0 6vw 2vw;
+  }
+}
+
+//service
+.service {
+  &__img {
+    margin: 0 auto;
+    height: 300px;
+  }
+
+  &__title {
+    font-size: 1.4rem;
+  }
+
+  &__block {
+    padding: 5vw 10vw;
+  }
+
+  &__item {
+    width: 100%;
+    margin-bottom: 5vw;
+
+    & li {
+      height: 200px;
+    }
+  }
+
+  &__num {
+    margin-top: 40px;
+    font-size: 1.4rem;
+  }
+
+  & .view-pc {
+    display: none;
+  }
+
+  &__p {
+    font-size: 1rem;
+  }
+}
+
+//accordion
+.accordion {
+  &__container {
+    width: 60%;
+  }
+
+  &__title {
+    height: 120px;
+
+    & p {
+      color: $cWhite;
+      font-size: 2vw;
+    }
+  }
+
+  &__btn {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: 7vw auto;
+  }
+}
+
+//staff 
+.staff {
+  &__num {
+    font-size: 1.4rem;
+  }
+
+  #swiper-slide {
+    & .swiper-slide__box {
+      padding-top: 5vw;
+      width: 50%;
+    }
+
+    & img {
+      width: 70%;
+    }
+
+    & p {
+      line-height: 1.5;
+    }
+  }
+
+  #pagination {
+    height: 450px;
+  }
+}
+
+//insta
+.instagram {
+  padding: 0 10vw;
+
+  &__num {
+    font-size: 1.4rem;
+  }
+
+  &__title {
+    font-size: 1.4rem;
+  }
+
+  &__img-box {
+    flex-wrap: wrap;
+  }
+
+  &__img {
+    width: 48%;
+    height: 180px;
+    border: rgb(255, 255, 255) 5px solid;
+  }
+}
+
+//access
+.access {
+  margin-top: 10vw;
+  padding-bottom: 3vw;
+
+  &__num {
+    font-size: 1.4rem;
+  }
+
+  &__title {
+    font-size: 1.4rem;
+  }
+
+  & .link-map-box {
+    width: 50%;
+  }
+
+  & .tel {
+    margin-top: 4vh;
+  }
+}
+
+//recruite
+.recruite {
+  & .link-map-box {
+    width: 50%;
+  }
+
+  &__num {
+    font-size: 1.4rem;
+  }
+
+  &__title {
+    font-size: 1.4rem;
+  }
+}
+
+//news 
+.p-news {
+  & .num {
+    font-size: 1.4rem;
+  }
+
+  & .txt {
+    font-size: 1.4rem;
+  }
+
+  &__date {
+    font-size: 1rem;
+  }
+
+  &__tit {
+    font-size: 1rem;
+  }
+}
+
+//mobile-menu
+.mobile-menu {
+  &__ul {
+    padding-top: 200px;
+    padding-left: 10vw;
+  }
+
+  &__li {
+    font-size: 1.3rem;
+    margin-bottom: 60px;
+  }
+
+  & address {
+    padding-left: 10vw;
+
+    & em {
+      font-size: 18px;
+    }
+
+    & a {
+      & span {
+        font-size: 1.3rem;
+      }
+    }
+  }
+}
+
+.footer {
+  &__inner {
+    height: 20vw;
+  }
+}
+
+//* * * * * * news-page * * * * * * *
+.c-news {
+  padding-top: 20vw;
+
+  & .c-container {
+    padding: 0 10vw 0 10vw;
+  }
+
+  & .c-title02 {
+    margin-bottom: 0;
+  }
+
+  &__list {
+    & a {
+      padding: 3vw 0 5vw 3vw;
+    }
+  }
+
+  & .next {
+    display: none;
+  }
+}
+
+
+//* * * * * * news-single-page * * * * * * *
+.c-news-sl {
+  & .c-container {
+    padding: 5vw 15vw 15vw 15vw;
+  }
+
+  & .c-title02 {
+    & .txt {
+      font-size: 1.6rem;
+    }
+  }
+
+  &__date {
+    font-size: 1.3rem;
+  }
+
+  &__title {
+    font-size: 1.3rem;
+  }
+
+  &__contents {
+    & p {
+      font-size: 1rem;
+      line-height: 2.5;
+    }
+  }
+
+  & .more-link {
+    & span {
+      font-size: 1.1rem;
+    }
+  }
+}
