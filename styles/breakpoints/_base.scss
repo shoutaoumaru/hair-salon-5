@@ -31,22 +31,6 @@ a:visited {
   padding: 0 10vw;
 }
 
-.icon-tel {
-  position: relative;
-
-  &::before {
-    content: '';
-    display: block;
-    background-image: url(/images/common/icon-tel.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 17px;
-    width: 17px;
-  }
-
-}
-
 .icon-map {
   position: relative;
 
@@ -63,20 +47,30 @@ a:visited {
 
 }
 
+.icon-tel {
+  display: inline-block;
+  position: absolute;
+  top: 4px;
+  right: 0;
+  background-image: url(/images/common/icon-tel.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 12px;
+  width: 12px;
+}
+
 .icon-net {
-  position: relative;
-
-  &::before {
-    content: '';
-    display: block;
-    background-image: url(/images/common/icon-calendar.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 17px;
-    width: 17px;
-  }
-
+  display: inline-block;
+  position: absolute;
+  top: 4px;
+  right: 0;
+  background-image: url(/images/common/icon-link-1-black.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 13px;
+  width: 13px;
 }
 
 .icon-insta {
@@ -123,16 +117,15 @@ a:visited {
     position: fixed;
     bottom: 0;
     left: 0;
-    background-color: #fff;
+    background-color: $cWhite;
     opacity: .7;
-    height: 6vh;
+    height: 6.5vh;
     width: 100%;
     z-index: 2000;
-    transition: all 0.4s;
+    transition: all.3s;
 
     &__container {
       display: flex;
-      justify-content: space-around;
       align-items: center;
       justify-content: space-between;
       position: absolute;
@@ -140,11 +133,25 @@ a:visited {
       bottom: 0;
       left: 0;
       right: 0;
-      width: 60vw;
+      width: 77vw;
       margin: auto;
 
       & a {
+        position: relative;
+        color: $cBlack;
+        font-size: 14px;
+        letter-spacing: 1px;
         display: block;
+        padding-right: 18px;
+      }
+
+      & .tel {
+        letter-spacing: 2px;
+      }
+
+      & a:hover,
+      a:active {
+        text-decoration: underline;
       }
     }
   }
@@ -171,7 +178,6 @@ a:visited {
 
   .swiper-container {
     height: 65vh;
-
   }
 
   .hero {

@@ -16,6 +16,10 @@ Stylesheet: 600px以上のモニタで適用
     top: 35px;
     right: 50px;
   }
+
+  & .sp-navbtn {
+    display: none;
+  }
 }
 
 //top
