@@ -45,7 +45,7 @@
     }
   }
 
-  &__ul {
+  &__list {
     width: 100%;
     font-size: 0.9em;
     text-align: left;
@@ -54,7 +54,7 @@
     padding-top: 140px;
   }
 
-  &__li {
+  &__item {
     opacity: 0;
     margin-bottom: 35px;
 
@@ -149,6 +149,15 @@
           }
         }
       }
+    }
+
+    &__list {
+      padding-left: 10vw;
+      font-size: 1.2rem;
+    }
+
+    &__item {
+      margin-bottom: 55px;
     }
   }
 }
