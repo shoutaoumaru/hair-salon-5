@@ -83,19 +83,6 @@
         text-align: center;
         padding: 10px 20px 10px 10px;
         font-size: 12px;
-
-        &::after {
-          content: '';
-          display: inline-block;
-          position: absolute;
-          top: 12px;
-          right: 5px;
-          height: 12px;
-          width: 12px;
-          background-image: url(/images/common/icon-tel.png);
-          background-size: contain;
-          background-repeat: no-repeat;
-        }
       }
     }
 
@@ -108,7 +95,7 @@
           content: '';
           display: inline-block;
           position: absolute;
-          top: 13px;
+          top: 11px;
           right: 5px;
           height: 12px;
           width: 12px;
@@ -124,7 +111,16 @@
         letter-spacing: 4px;
 
         &::after {
-          right: 7px;
+          content: '';
+          display: inline-block;
+          position: absolute;
+          top: 11px;
+          right: 5px;
+          height: 12px;
+          width: 12px;
+          background-image: url(/images/common/icon-tel.png);
+          background-size: contain;
+          background-repeat: no-repeat;
         }
       }
     }
