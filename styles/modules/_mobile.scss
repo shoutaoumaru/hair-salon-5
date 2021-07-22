@@ -13,7 +13,7 @@
   &__nav {
     display: block;
     height: 100%;
-    width: 55%;
+    width: 65%;
     background-color: #fff;
 
     & address {
@@ -51,7 +51,7 @@
     text-align: left;
     list-style: none;
     padding-left: 35px;
-    padding-top: 170px;
+    padding-top: 140px;
   }
 
   &__li {
@@ -63,15 +63,97 @@
     }
   }
 
-  & address {
-    & a {
-      color: $cSubBlack;
+  .reserve-btn-wrap {
+    padding: 0 10px 0 35px;
+
+    & h4 {
+      font-size: 12px;
+      margin-bottom: 10px;
+    }
+
+    .reserve-btn {
+      border: 1px solid $cBlack;
+      display: inline-block;
+      margin-bottom: 25px;
+      width: 172px;
+
+      & span {
+        position: relative;
+        display: block;
+        text-align: center;
+        padding: 10px 20px 10px 10px;
+        font-size: 12px;
+
+        &::after {
+          content: '';
+          display: inline-block;
+          position: absolute;
+          top: 13px;
+          right: 5px;
+          height: 12px;
+          width: 12px;
+          background-image: url(/images/common/icon-tel.png);
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+      }
+    }
+
+    .reserve-btn-net {
+      & span {
+        position: relative;
+        letter-spacing: 2px;
+
+        &::after {
+          content: '';
+          display: inline-block;
+          position: absolute;
+          top: 13px;
+          right: 5px;
+          height: 12px;
+          width: 12px;
+          background-image: url(/images/common/icon-link-1-black.png);
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+      }
+    }
+
+    .reserve-btn-tel {
+      & span {
+        letter-spacing: 4px;
+
+        &::after {
+          right: 7px;
+        }
+      }
     }
   }
 
-  .btn-reserve {
-    width: 80%;
-    margin: 20px auto;
+  @media (min-width:600px) {
+    .reserve-btn-wrap {
+      padding-left: 10vw;
+
+      h4 {
+        font-size: 18px;
+      }
+
+      .reserve-btn {
+        width: 240px;
+
+        & span {
+          padding: 15px 30px 15px 20px;
+          font-size: 16px;
+
+          &::after {
+            top: 16px;
+            right: 12px;
+            width: 18px;
+            height: 18px;
+          }
+        }
+      }
+    }
   }
 }
 

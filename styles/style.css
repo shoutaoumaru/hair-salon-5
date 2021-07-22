@@ -2091,7 +2091,7 @@ a:visited {
 .mobile-menu__nav {
   display: block;
   height: 100%;
-  width: 55%;
+  width: 65%;
   background-color: #fff;
 }
 
@@ -2129,7 +2129,7 @@ a:visited {
   text-align: left;
   list-style: none;
   padding-left: 35px;
-  padding-top: 170px;
+  padding-top: 140px;
 }
 
 .mobile-menu__li {
@@ -2141,13 +2141,89 @@ a:visited {
   color: #363636;
 }
 
-.mobile-menu address a {
-  color: #363636;
+.mobile-menu .reserve-btn-wrap {
+  padding: 0 10px 0 35px;
 }
 
-.mobile-menu .btn-reserve {
-  width: 80%;
-  margin: 20px auto;
+.mobile-menu .reserve-btn-wrap h4 {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.mobile-menu .reserve-btn-wrap .reserve-btn {
+  border: 1px solid #363636;
+  display: inline-block;
+  margin-bottom: 25px;
+  width: 172px;
+}
+
+.mobile-menu .reserve-btn-wrap .reserve-btn span {
+  position: relative;
+  display: block;
+  text-align: center;
+  padding: 10px 20px 10px 10px;
+  font-size: 12px;
+}
+
+.mobile-menu .reserve-btn-wrap .reserve-btn span::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: 13px;
+  right: 5px;
+  height: 12px;
+  width: 12px;
+  background-image: url(/images/common/icon-tel.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.mobile-menu .reserve-btn-wrap .reserve-btn-net span {
+  position: relative;
+  letter-spacing: 2px;
+}
+
+.mobile-menu .reserve-btn-wrap .reserve-btn-net span::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: 13px;
+  right: 5px;
+  height: 12px;
+  width: 12px;
+  background-image: url(/images/common/icon-link-1-black.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.mobile-menu .reserve-btn-wrap .reserve-btn-tel span {
+  letter-spacing: 4px;
+}
+
+.mobile-menu .reserve-btn-wrap .reserve-btn-tel span::after {
+  right: 7px;
+}
+
+@media (min-width: 600px) {
+  .mobile-menu .reserve-btn-wrap {
+    padding-left: 10vw;
+  }
+  .mobile-menu .reserve-btn-wrap h4 {
+    font-size: 18px;
+  }
+  .mobile-menu .reserve-btn-wrap .reserve-btn {
+    width: 240px;
+  }
+  .mobile-menu .reserve-btn-wrap .reserve-btn span {
+    padding: 15px 30px 15px 20px;
+    font-size: 16px;
+  }
+  .mobile-menu .reserve-btn-wrap .reserve-btn span::after {
+    top: 16px;
+    right: 12px;
+    width: 18px;
+    height: 18px;
+  }
 }
 
 .mobile-container {
