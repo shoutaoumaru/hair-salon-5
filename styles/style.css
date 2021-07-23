@@ -648,7 +648,7 @@ a:visited {
 }
 
 .icon-map::before {
-  content: '';
+  content: "";
   display: block;
   background-image: url(/images/common/icon-map.png);
   background-position: center;
@@ -693,7 +693,7 @@ a:visited {
 }
 
 .icon-insta::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -710,8 +710,8 @@ a:visited {
 }
 
 .header .logo {
-  -webkit-transition: all .3s;
-  transition: all .3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
   background-image: url(/images/common/riv_logo_official2.png);
   background-position: center;
   background-size: contain;
@@ -730,7 +730,7 @@ a:visited {
   bottom: 0;
   left: 0;
   background-color: white;
-  opacity: .7;
+  opacity: 0.7;
   height: 6.5vh;
   width: 100%;
   z-index: 2000;
@@ -872,7 +872,7 @@ a:visited {
   text-align: center;
   color: palevioletred;
   letter-spacing: 14px;
-  font-family: 'Hind Guntur', sans-serif;
+  font-family: "Hind Guntur", sans-serif;
   font-size: 1.5em;
   margin-bottom: 80px;
 }
@@ -933,7 +933,7 @@ a:visited {
   text-align: center;
   color: palevioletred;
   letter-spacing: 14px;
-  font-family: 'Hind Guntur', sans-serif;
+  font-family: "Hind Guntur", sans-serif;
   font-size: 1.5em;
   margin-bottom: 4vh;
 }
@@ -1085,7 +1085,7 @@ a:visited {
   text-align: center;
   color: palevioletred;
   letter-spacing: 14px;
-  font-family: 'Hind Guntur', sans-serif;
+  font-family: "Hind Guntur", sans-serif;
 }
 
 .service__subtitle {
@@ -1098,7 +1098,7 @@ a:visited {
   margin: 35px;
   text-align: left;
   line-height: 2;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .service__item {
@@ -1180,12 +1180,12 @@ a:visited {
   font-weight: bold;
   font-size: 1.5em;
   padding: 20px;
-  font-family: 'Hind Guntur', sans-serif;
+  font-family: "Hind Guntur", sans-serif;
 }
 
 .staff__p {
   text-align: left;
-  margin: 30px;
+  margin: 30px 30px 10px 30px;
   font-size: 0.8em;
 }
 
@@ -1193,6 +1193,24 @@ a:visited {
   font-size: 0.3em;
   letter-spacing: 2px;
   color: #5e5a5a;
+}
+
+.staff .sns-link span {
+  position: relative;
+  padding-left: 30px;
+  font-size: 16px;
+}
+
+.staff .sns-link span::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  display: inline-block;
+  background-image: url(/images/common/icon-insta-gr.png);
+  background-size: contain;
+  height: 20px;
+  width: 20px;
 }
 
 .instagram__block {
@@ -1213,7 +1231,7 @@ a:visited {
   text-align: center;
   color: palevioletred;
   letter-spacing: 14px;
-  font-family: 'Hind Guntur', sans-serif;
+  font-family: "Hind Guntur", sans-serif;
 }
 
 .instagram__img-box {
@@ -1252,7 +1270,7 @@ a:visited {
   text-align: center;
   color: palevioletred;
   letter-spacing: 14px;
-  font-family: 'Hind Guntur', sans-serif;
+  font-family: "Hind Guntur", sans-serif;
   margin-bottom: 4vh;
 }
 
@@ -1296,7 +1314,7 @@ a:visited {
 }
 
 .access .link-map-box p span::before {
-  content: '';
+  content: "";
   height: 20px;
   width: 20px;
   position: absolute;
@@ -1327,7 +1345,7 @@ a:visited {
   text-align: center;
   color: palevioletred;
   letter-spacing: 14px;
-  font-family: 'Hind Guntur', sans-serif;
+  font-family: "Hind Guntur", sans-serif;
   margin-bottom: 4vh;
 }
 
@@ -1382,7 +1400,7 @@ a:visited {
   text-align: center;
   color: palevioletred;
   letter-spacing: 14px;
-  font-family: 'Hind Guntur', sans-serif;
+  font-family: "Hind Guntur", sans-serif;
   font-size: 1.5em;
   margin-bottom: 50px;
   display: block;
@@ -1395,7 +1413,7 @@ a:visited {
 .p-news__item {
   padding: 5vw 5vw;
   border-top: 1px solid #d8d8d8;
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 
 .p-news__item:last-child {
@@ -1405,7 +1423,7 @@ a:visited {
 .p-news__date {
   letter-spacing: 2px;
   border: 1px solid #f0f0f0;
-  padding: .5vw;
+  padding: 0.5vw;
   background-color: #fafafa;
   border-radius: 5%;
 }
@@ -1457,7 +1475,7 @@ a:visited {
 .footer .copyright {
   color: white;
   text-align: center;
-  font-size: .7rem;
+  font-size: 0.7rem;
   letter-spacing: 3px;
 }
 
@@ -1477,13 +1495,13 @@ a:visited {
 
 .c-recruit__title p {
   margin-top: 10vw;
-  font-size: .5rem;
+  font-size: 0.5rem;
   line-height: 2;
 }
 
 .c-recruit__list {
   margin-top: 10vw;
-  font-size: .6rem;
+  font-size: 0.6rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1498,7 +1516,7 @@ a:visited {
   text-align: right;
   letter-spacing: 2px;
   line-height: 1.5;
-  font-size: .7rem;
+  font-size: 0.7rem;
   margin-top: 20px;
 }
 
@@ -1510,7 +1528,7 @@ a:visited {
 }
 
 .c-recruit__btn span::before {
-  content: '';
+  content: "";
   display: inline-block;
   position: absolute;
   top: 0;
@@ -1525,11 +1543,11 @@ a:visited {
 
 .c-recruit__name {
   text-align: center;
-  font-size: .7rem;
+  font-size: 0.7rem;
 }
 
 .c-recruit__desc {
-  font-size: .5rem;
+  font-size: 0.5rem;
 }
 
 .c-news {
@@ -1542,7 +1560,7 @@ a:visited {
 }
 
 .c-news .c-title02 {
-  font-size: .9rem;
+  font-size: 0.9rem;
   text-align: center;
 }
 
@@ -1550,7 +1568,7 @@ a:visited {
   text-align: center;
   color: palevioletred;
   letter-spacing: 14px;
-  font-family: 'Hind Guntur', sans-serif;
+  font-family: "Hind Guntur", sans-serif;
   font-size: 1.5em;
   margin-bottom: 80px;
   display: block;
@@ -1601,7 +1619,7 @@ a:visited {
   width: 10vw;
   height: 10vw;
   border-radius: 100%;
-  border: 1px solid #C4CCD1;
+  border: 1px solid #c4ccd1;
   background: #fff;
   margin: 0 1.3vw;
 }
@@ -1646,13 +1664,13 @@ a:visited {
 
 .c-news .c-news__contents {
   line-height: 2;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .c-news .c-news__title {
   text-align: center;
   margin-bottom: 10vw;
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 
 .c-news .c-news__title p {
@@ -1672,7 +1690,7 @@ a:visited {
 }
 
 .c-news-sl .c-title02 {
-  font-size: .9rem;
+  font-size: 0.9rem;
   text-align: center;
 }
 
@@ -1680,7 +1698,7 @@ a:visited {
   text-align: center;
   color: palevioletred;
   letter-spacing: 14px;
-  font-family: 'Hind Guntur', sans-serif;
+  font-family: "Hind Guntur", sans-serif;
   font-size: 1.5em;
   margin-bottom: 50px;
   display: block;
@@ -1702,7 +1720,7 @@ a:visited {
 .c-news-sl__contents {
   padding: 10vw 0;
   line-height: 2;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .c-news-sl__link {
@@ -1724,7 +1742,7 @@ a:visited {
   padding-bottom: 7px;
   margin-bottom: 20px;
   border-bottom: 1px solid #707070;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .appear.up .item {
@@ -3146,6 +3164,15 @@ Stylesheet: 600px以上のモニタで適用
   }
   .staff #swiper-slide p {
     line-height: 1.5;
+  }
+  .staff #swiper-slide .sns-link span {
+    font-size: 25px;
+  }
+  .staff #swiper-slide .sns-link span::before {
+    height: 24px;
+    width: 24px;
+    top: 10px;
+    right: 10px;
   }
   .staff #pagination {
     height: 450px;
