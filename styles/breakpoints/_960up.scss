@@ -83,13 +83,50 @@ Stylesheet: 960px以上のモニタで適用
     }
   }
 }
+
 //.staff
 .staff {
   height: 780px;
+
   .pagination-img {
     height: 250px;
   }
+
+  .in {
+    margin-bottom: 20px;
+    font-size: 1rem;
+  }
+
+  &__name {
+    font-size: 1.2rem;
+  }
+
+  #swiper-slide {
+    & img {
+      padding-left: 20px;
+      width: 50%;
+    }
+
+    & p {
+      line-height: 2.5;
+    }
+
+    & .swiper-slide {
+      &__box {
+        display: flex;
+        align-items: center;
+        padding-top: 0 !important;
+        width: 70%;
+      }
+    }
+
+    .sns-link {
+      left: 180px;
+      bottom: 55px;
+    }
+  }
 }
+
 //.instagram
 .instagram {
   &__img {

@@ -1195,10 +1195,18 @@ a:visited {
   color: #5e5a5a;
 }
 
+.staff .sns-link {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 12px;
+  margin: auto;
+}
+
 .staff .sns-link span {
   position: relative;
-  padding-left: 30px;
-  font-size: 16px;
+  padding-left: 20px;
+  font-size: 14px;
 }
 
 .staff .sns-link span::before {
@@ -1209,8 +1217,8 @@ a:visited {
   display: inline-block;
   background-image: url(/images/common/icon-insta-gr.png);
   background-size: contain;
-  height: 20px;
-  width: 20px;
+  height: 14px;
+  width: 14px;
 }
 
 .instagram__block {
@@ -2991,7 +2999,7 @@ a:visited {
   margin-right: 15px;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 900px) {
   .swiper-button-prev {
     margin-left: 75px;
   }
@@ -3169,12 +3177,15 @@ Stylesheet: 600px以上のモニタで適用
   .staff #swiper-slide p {
     line-height: 1.5;
   }
+  .staff #swiper-slide .sns-link {
+    bottom: 25px;
+  }
   .staff #swiper-slide .sns-link span {
-    font-size: 25px;
+    font-size: 18px;
   }
   .staff #swiper-slide .sns-link span::before {
-    height: 24px;
-    width: 24px;
+    height: 18px;
+    width: 18px;
     top: 0px;
     right: 10px;
   }
@@ -3365,6 +3376,34 @@ Stylesheet: 960px以上のモニタで適用
   }
   .staff .pagination-img {
     height: 250px;
+  }
+  .staff .in {
+    margin-bottom: 20px;
+    font-size: 1rem;
+  }
+  .staff__name {
+    font-size: 1.2rem;
+  }
+  .staff #swiper-slide img {
+    padding-left: 20px;
+    width: 50%;
+  }
+  .staff #swiper-slide p {
+    line-height: 2.5;
+  }
+  .staff #swiper-slide .swiper-slide__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 0 !important;
+    width: 70%;
+  }
+  .staff #swiper-slide .sns-link {
+    left: 180px;
+    bottom: 55px;
   }
   .instagram__img {
     height: 250px;

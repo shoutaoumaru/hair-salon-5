@@ -173,6 +173,7 @@ Stylesheet: 600px以上のモニタで適用
 //staff
 .staff {
   height: 720px;
+
   &__num {
     font-size: 1.4rem;
   }
@@ -193,11 +194,14 @@ Stylesheet: 600px以上のモニタで適用
     }
 
     .sns-link {
+      bottom: 25px;
+
       & span {
-        font-size: 25px;
+        font-size: 18px;
+
         &::before {
-          height: 24px;
-          width: 24px;
+          height: 18px;
+          width: 18px;
           top: 0px;
           right: 10px;
         }
@@ -208,6 +212,7 @@ Stylesheet: 600px以上のモニタで適用
   #pagination {
     height: 450px;
   }
+
   #swiper-pagination {
     bottom: -50px;
   }
