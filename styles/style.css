@@ -1140,7 +1140,7 @@ a:visited {
 }
 
 .staff {
-  height: 800px;
+  height: 700px;
   background-color: #dd5e72;
   line-height: 1.5;
 }
@@ -1185,8 +1185,8 @@ a:visited {
 
 .staff__p {
   text-align: left;
-  margin: 30px 30px 10px 30px;
-  font-size: 0.8em;
+  margin: 20px 30px 10px 30px;
+  font-size: 0.8rem;
 }
 
 .staff .in {
@@ -3152,12 +3152,16 @@ Stylesheet: 600px以上のモニタで適用
     right: 0;
     margin: 7vw auto;
   }
+  .staff {
+    height: 720px;
+  }
   .staff__num {
     font-size: 1.4rem;
   }
   .staff #swiper-slide .swiper-slide__box {
     padding-top: 5vw;
     width: 50%;
+    height: 470px;
   }
   .staff #swiper-slide img {
     width: 70%;
@@ -3171,11 +3175,14 @@ Stylesheet: 600px以上のモニタで適用
   .staff #swiper-slide .sns-link span::before {
     height: 24px;
     width: 24px;
-    top: 10px;
+    top: 0px;
     right: 10px;
   }
   .staff #pagination {
     height: 450px;
+  }
+  .staff #swiper-pagination {
+    bottom: -50px;
   }
   .instagram {
     padding: 0 10vw;
@@ -3353,6 +3360,12 @@ Stylesheet: 960px以上のモニタで適用
   .service__item li {
     height: 200px;
   }
+  .staff {
+    height: 780px;
+  }
+  .staff .pagination-img {
+    height: 250px;
+  }
   .instagram__img {
     height: 250px;
   }
@@ -3369,7 +3382,7 @@ Stylesheet: 960px以上のモニタで適用
     padding: 5vw 0 10vw 0;
   }
   .c-recruit__title p {
-    font-size: .9rem;
+    font-size: 0.9rem;
   }
   .c-recruit__list {
     margin-top: 5vw;
@@ -3492,6 +3505,9 @@ Stylesheet: 1200px以上のモニタで適用
   .staff .swiper-button-prev button,
   .staff .swiper-button-next button {
     font-size: 22px;
+  }
+  .staff .pagination-img {
+    height: 280px;
   }
   .instagram__img {
     width: 23%;

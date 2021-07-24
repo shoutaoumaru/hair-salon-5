@@ -172,6 +172,7 @@ Stylesheet: 600px以上のモニタで適用
 
 //staff
 .staff {
+  height: 720px;
   &__num {
     font-size: 1.4rem;
   }
@@ -180,6 +181,7 @@ Stylesheet: 600px以上のモニタで適用
     & .swiper-slide__box {
       padding-top: 5vw;
       width: 50%;
+      height: 470px;
     }
 
     & img {
@@ -196,7 +198,7 @@ Stylesheet: 600px以上のモニタで適用
         &::before {
           height: 24px;
           width: 24px;
-          top: 10px;
+          top: 0px;
           right: 10px;
         }
       }
@@ -205,6 +207,9 @@ Stylesheet: 600px以上のモニタで適用
 
   #pagination {
     height: 450px;
+  }
+  #swiper-pagination {
+    bottom: -50px;
   }
 }
 

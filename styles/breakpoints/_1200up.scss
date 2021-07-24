@@ -93,7 +93,6 @@ Stylesheet: 1200px以上のモニタで適用
       }
     }
   }
-
 }
 
 .accordion {
@@ -109,7 +108,6 @@ Stylesheet: 1200px以上のモニタで適用
       align-items: center;
       padding-top: 0 !important;
     }
-
   }
 
   .swiper-button-prev,
@@ -117,6 +115,9 @@ Stylesheet: 1200px以上のモニタで適用
     & button {
       font-size: 22px;
     }
+  }
+  .pagination-img {
+    height: 280px;
   }
 }
 
@@ -189,7 +190,6 @@ Stylesheet: 1200px以上のモニタで適用
       font-size: 1rem;
     }
   }
-
 }
 
 //* * * * * * news-sl-page * * * * * * *

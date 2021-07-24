@@ -522,7 +522,7 @@ a:visited {
 
 //STAFFセクション
 .staff {
-  height: 800px;
+  height: 700px;
   background-color: #dd5e72;
   line-height: 1.5;
 
@@ -566,9 +566,8 @@ a:visited {
 
   &__p {
     text-align: left;
-    margin: 30px 30px 10px 30px;
-    // margin-bottom: 10px;
-    font-size: 0.8em;
+    margin: 20px 30px 10px 30px;
+    font-size: 0.8rem;
   }
 
   .in {

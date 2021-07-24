@@ -83,7 +83,13 @@ Stylesheet: 960px以上のモニタで適用
     }
   }
 }
-
+//.staff
+.staff {
+  height: 780px;
+  .pagination-img {
+    height: 250px;
+  }
+}
 //.instagram
 .instagram {
   &__img {
@@ -98,7 +104,7 @@ Stylesheet: 960px以上のモニタで適用
   }
 }
 
-//news-page 
+//news-page
 .c-news {
   & .c-title02 {
     font-size: 1.8rem;
@@ -115,7 +121,7 @@ Stylesheet: 960px以上のモニタで適用
 
   &__title {
     & p {
-      font-size: .9rem;
+      font-size: 0.9rem;
     }
   }
 
