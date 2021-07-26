@@ -93,13 +93,14 @@ Stylesheet: 1200px以上のモニタで適用
       }
     }
   }
-}
 
-.accordion {
-  &__btn {
-    margin: 4vw auto;
+  .accordion {
+    &__btn {
+      margin: 4vw auto;
+    }
   }
 }
+
 
 .staff {
   & .swiper-slide {
@@ -116,6 +117,7 @@ Stylesheet: 1200px以上のモニタで適用
       font-size: 22px;
     }
   }
+
   .pagination-img {
     height: 280px;
   }

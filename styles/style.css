@@ -1447,7 +1447,6 @@ a:visited {
 .p-news .more-link {
   display: block;
   text-align: right;
-  padding-right: 30px;
 }
 
 .p-news .more-link span {
@@ -3371,6 +3370,9 @@ Stylesheet: 960px以上のモニタで適用
   .service__item li {
     height: 200px;
   }
+  .service .accordion__btn {
+    margin: 5vw auto;
+  }
   .staff {
     height: 780px;
   }
@@ -3529,7 +3531,7 @@ Stylesheet: 1200px以上のモニタで適用
   .service__block .service__item li {
     height: 200px;
   }
-  .accordion__btn {
+  .service .accordion__btn {
     margin: 4vw auto;
   }
   .staff .swiper-slide__box {
