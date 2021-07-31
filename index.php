@@ -2,16 +2,7 @@
 <html lang="ja">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>美容室テンプレート5</title>
-  <link rel="stylesheet" href="/styles/vendors/logo-animation.min.css" />
-  <link rel="stylesheet" href="styles/vendors/bootstrap-reboot.css" />
-  <link rel="stylesheet" href="styles/vendors/swiper.min.css" />
-  <link rel="stylesheet" href="styles/vendors/animsition.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
-  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet" />
-  <link rel="stylesheet" href="styles/style.css" />
+  <?php get_header(); ?>
 </head>
 
 <body class="animsition">
@@ -19,23 +10,6 @@
     <div class="svg-animation">
       <svg id="レイヤー_1" data-name="レイヤー 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380.06 99.83"
         width="380.05999755859375" height="99.83000183105469">
-        <defs>
-          <style>
-            .cls-1,
-            .cls-2 {
-              fill: none;
-              stroke-miterlimit: 10;
-            }
-
-            .cls-1 {
-              stroke: #231815;
-            }
-
-            .cls-2 {
-              stroke: #232339;
-            }
-          </style>
-        </defs>
         <path class="cls-1 svg-elem-1"
           d="M146.45,384.68c4.32,1.33,8.57,2.9,12.75,4.65a65.91,65.91,0,0,1,8.17-7.14,44.33,44.33,0,0,1,7.92-4.7L158.75,368l-24,13.83A102.37,102.37,0,0,1,146.45,384.68Z"
           transform="translate(-115.52 -367.37)"></path>
@@ -107,7 +81,7 @@
     <header id="header" class="header">
       <div class="mobile-container">
         <div class="logo__img">
-          <a class="animsition-link" href="/">
+          <a class="animsition-link" href="<?php echo esc_url( home_url('/')); ?>">
             <div class="logo"></div>
           </a>
         </div>
@@ -122,20 +96,20 @@
       <!-- /.mobile-container -->
       <div class="pc-container">
         <div class="logo__img">
-          <a class="animsition-link" href="/">
+          <a class="animsition-link" href="<?php echo esc_url( home_url('/')); ?>">
             <div class="logo-pc logo"></div>
           </a>
         </div>
         <nav class="pc-nav">
           <ul class="pc-nav-list">
             <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link" href="/"><span>TOP</span></a>
+              <a class="pc-nav-link animsition-link" href="<?php echo esc_url( home_url('/')); ?>"><span>TOP</span></a>
             </li>
             <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link" href="/news/news.html"><span>NEWS</span></a>
+              <a class="pc-nav-link animsition-link" href="<?php echo esc_url( home_url('/news')); ?>"><span>NEWS</span></a>
             </li>
             <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link" href="/recruit/recruit.html"><span>RECRUIT</span></a>
+              <a class="pc-nav-link animsition-link" href="<?php echo esc_url( home_url('/recruit')); ?>"><span>RECRUIT</span></a>
             </li>
           </ul>
         </nav>
@@ -159,16 +133,16 @@
         <div id="swiper-container" class="swiper-container">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <img class="view-sp" src="/images/home/style_1@sp.jpg" />
-              <img class="view-pc" src="/images/home/style_1@pc.jpg" />
+              <img class="view-sp" src="<?php echo get_template_directory_uri(); ?>/images/home/style_1@sp.jpg" />
+              <img class="view-pc" src="<?php echo get_template_directory_uri(); ?>/images/home/style_1@pc.jpg" />
             </div>
             <div class="swiper-slide">
-              <img class="view-sp" src="/images/home/cut_3@sp.jpg" />
-              <img class="view-pc" src="/images/home/cut_3@pc.jpg" />
+              <img class="view-sp" src="<?php echo get_template_directory_uri(); ?>/images/home/cut_3@sp.jpg" />
+              <img class="view-pc" src="<?php echo get_template_directory_uri(); ?>/images/home/cut_3@pc.jpg" />
             </div>
             <div class="swiper-slide">
-              <img class="view-sp" src="/images/home/store_4@sp.jpg" />
-              <img class="view-pc" src="/images/home/store_4@pc.jpg" />
+              <img class="view-sp" src="<?php echo get_template_directory_uri(); ?>/images/home/store_4@sp.jpg" />
+              <img class="view-pc" src="<?php echo get_template_directory_uri(); ?>/images/home/store_4@pc.jpg" />
             </div>
           </div>
         </div>
@@ -188,10 +162,10 @@
         <h2 class="concept__tit item">CONCEPT</h2>
         <div class="concept__img-block item">
           <div id="js-infiniteslide" class="gallery">
-            <img class="gallery__img" src="images/home/style__2.jpg" />
-            <img class="gallery__img" src="images/home/style_2.jpg" />
-            <img class="gallery__img" src="images/home/style_5@pc.jpg" />
-            <img class="gallery__img" src="images/home/style_1@pc.jpg" />
+            <img class="gallery__img" src="<?php echo get_template_directory_uri(); ?>/images/home/style__2.jpg" />
+            <img class="gallery__img" src="<?php echo get_template_directory_uri(); ?>/images/home/style_2.jpg" />
+            <img class="gallery__img" src="<?php echo get_template_directory_uri(); ?>/images/home/style_5@pc.jpg" />
+            <img class="gallery__img" src="<?php echo get_template_directory_uri(); ?>/images/home/style_1@pc.jpg" />
           </div>
         </div>
         <div class="concept__block item">
@@ -277,7 +251,7 @@
       <div class="service__inner">
         <div class="service__block">
           <div class="service__img cover-slide">
-            <img class="img-zoom" src="/images/home/store__2@sp.jpg" />
+            <img class="img-zoom" src="<?php echo get_template_directory_uri(); ?>/images/home/store__2@sp.jpg" />
           </div>
           <div class="service__container appear up">
             <div class="service__num item">03</div>
@@ -313,7 +287,7 @@
                   「いつまでも触っていたい髪」をコンセプトに髪質改善を。カラーやパーマ、ヘアデザインを楽しみたいのに髪がまとまらない、パサつく…また年齢とともに変化していく髪など、悩みは様々です。RivRoundでは、お客様一人一人の髪質を考慮し、日本トップクラスの上質な薬剤を使用しています。サロンケアだけでなく、ホームケアまでお悩みにあわせて、しっかり提案させていただきます。
                 </p>
                 <div class="image-box">
-                  <img src="images/home/treatment.jpg" alt="トリートメント" />
+                  <img src="<?php echo get_template_directory_uri(); ?>/images/home/treatment.jpg" alt="トリートメント" />
                 </div>
                 <h3 class="sub mtop80">
                   スパで髪質が変わる。毎日のお手入れが楽になる。
@@ -322,7 +296,7 @@
                   頭皮はキレイな髪を作る土台です。髪のツヤ、ボリュームがでない、また抜け毛やかゆみなどの悩みと様々ですが、実は頭皮の状態が原因な事がほとんどです。そのためにはヘッドスパが効果的です。リラクゼーションだけではなく頭皮を健康に育むための施術です。RivRoundでは、ヘアデザインを楽しんでいただくためにお客様一人一人に適したスパを提案させていただきます。
                 </p>
                 <div class="image-box">
-                  <img src="/images/home/headspa@pc.jpg" alt="ケア" />
+                  <img src="<?php echo get_template_directory_uri(); ?>/images/home/headspa@pc.jpg" alt="ケア" />
                 </div>
               </div>
             </div>
@@ -340,7 +314,7 @@
             <div class="swiper-wrapper">
               <div id="swiper-slide" class="swiper-slide">
                 <div class="swiper-slide__box">
-                  <img class="pagination-img" src="/images/home/biyousshi_mens.jpg" alt="" />
+                  <img class="pagination-img" src="<?php echo get_template_directory_uri(); ?>/images/home/biyousshi_mens.jpg" alt="" />
                   <div class="c-txtarea">
                     <p class="in">DIRECTOR</p>
                     <h3 class="staff__name">利部 翔太</h3>
@@ -355,7 +329,7 @@
               </div>
               <div id="swiper-slide" class="swiper-slide">
                 <div class="swiper-slide__box">
-                  <img class="pagination-img" src="images/home/biyoushi.lady@sp.jpg" alt="" />
+                  <img class="pagination-img" src="<?php echo get_template_directory_uri(); ?>/images/home/biyoushi.lady@sp.jpg" alt="" />
                   <div class="c-txtarea">
                     <p class="in">TOP STYLIST</p>
                     <h3 class="staff__name">利部 真理</h3>
@@ -387,18 +361,18 @@
           <h2 class="instagram__title">INSTAGRAM</h2>
           <div class="instagram__img-box">
             <div class="instagram__img">
-              <a href="https://www.instagram.com/" target="_blank"><img src="images/home/style_5@sp.jpg" /></a>
+              <a href="https://www.instagram.com/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/images/home/style_5@sp.jpg" /></a>
             </div>
             <div class="instagram__img">
               <a href="https://www.instagram.com" target="_blank"><img
-                  src="images/george-bohunicky-qJKT2rMU0VU-unsplash.jpg" /></a>
+                  src="<?php echo get_template_directory_uri(); ?>/images/george-bohunicky-qJKT2rMU0VU-unsplash.jpg" /></a>
             </div>
             <div class="instagram__img">
               <a href="https://www.instagram.com/" target="_blank"><img
-                  src="images/greg-trowman-jsuWg7IXx1k-unsplash.jpg" /></a>
+                  src="<?php echo get_template_directory_uri(); ?>/images/greg-trowman-jsuWg7IXx1k-unsplash.jpg" /></a>
             </div>
             <div class="instagram__img">
-              <a href="https://www.instagram.com/" target="_blank"><img src="images/home/style_2.jpg" /></a>
+              <a href="https://www.instagram.com/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/images/home/style_2.jpg" /></a>
             </div>
           </div>
         </div>
@@ -469,26 +443,18 @@
           <span class="txt">News</span>
         </h3>
         <ul class="p-news__list item">
-          <li class="p-news__item">
-            <a href="/news/news-single.html" class="p-news__link">
-              <span class="p-news__date">2021.4.5</span>
-              <p class="p-news__tit">新型コロナウィルス感染予防について。</p>
-            </a>
-          </li>
-          <li class="p-news__item">
-            <a href="/news/news-single.html" class="p-news__link">
-              <span class="p-news__date">2021.1.5</span>
-              <p class="p-news__tit">東京都緊急事態宣言について。</p>
-            </a>
-          </li>
-          <li class="p-news__item">
-            <a href="/news/news-single.html" class="p-news__link">
-              <span class="p-news__date">2020.11.5</span>
-              <p class="p-news__tit">時短営業について。</p>
-            </a>
-          </li>
+          <?php query_posts('posts_per_page=3'); ?>
+          <?php if (have_posts()) : while(have_posts()) : the_post();?>
+            <li class="p-news__item">
+              <a href="<?php the_permalink(); ?>" class="p-news__link">
+                <span class="p-news__date"><?php echo get_the_date(); ?></span>
+                <p class="p-news__tit"><?php the_title(); ?></p>
+              </a>
+            </li>
+          <?php endwhile; ?>
+          <?php endif; ?>
         </ul>
-        <a class="more-link animsition-link item" href="/news/news.html"><span class="readmore">Read More</span></a>
+        <a class="more-link animsition-link item" href="<?php echo esc_url( home_url('/news')); ?>"><span class="readmore">Read More</span></a>
       </div>
     </article>
     <!-- /.p-news -->
@@ -510,13 +476,13 @@
       <nav class="mobile-menu__nav">
         <ul class="mobile-menu__list">
           <li class="mobile-menu__item">
-            <a class="animsition-link" href="/">TOP</a>
+            <a class="animsition-link" href="<?php echo esc_url( home_url('/')); ?>">TOP</a>
           </li>
           <li class="mobile-menu__item">
-            <a class="animsition-link" href="/news/news.html">NEWS</a>
+            <a class="animsition-link" href="<?php echo esc_url( home_url('/news')); ?>">NEWS</a>
           </li>
           <li class="mobile-menu__item">
-            <a class="animsition-link" href="/recruit/recruit.html">RECRUIT</a>
+            <a class="animsition-link" href="<?php echo esc_url( home_url('/recruit')); ?>">RECRUIT</a>
           </li>
         </ul>
         <div class="reserve-btn-wrap">
@@ -538,22 +504,7 @@
     <!-- /.mobile-menu -->
   </div>
   <!-- /.superwrapper -->
-  <script src="scripts/vendors/pace.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <script src="scripts/vendors/animsition.min.js"></script>
-  <script src="scripts/libs/page.js"></script>
-  <script src="scripts/vendors/swiper.min.js"></script>
-  <script src="scripts/vendors/swiper.min.js"></script>
-  <script src="scripts/libs/hero-slider.js"></script>
-  <script src="scripts/libs/scroll.js"></script>
-  <script src="scripts/libs/scroll-btn.js"></script>
-  <script src="scripts/vendors/infiniteslidev2.js"></script>
-  <script src="scripts//libs/text-animation.js"></script>
-  <script src="scripts//libs/mobile-menu.js"></script>
-  <script src="scripts//libs/inf.js"></script>
-  <script src="scripts/libs/accordion.js"></script>
-  <script src="scripts/libs/pagination.js"></script>
-  <script src="scripts/main.js"></script>
+  <?php get_footer(); ?>
 </body>
 
 </html>

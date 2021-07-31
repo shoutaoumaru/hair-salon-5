@@ -1,25 +1,21 @@
+<?php
+  /* Template Name: recruit
+  */
+?>
 <!DOCTYPE html>
 <html lang="ja">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>美容師テンプレート4/recruit</title>
-  <link rel="stylesheet" href="/styles/vendors/animsition.min.css">
-  <link rel="stylesheet" href="/styles/vendors/bootstrap-reboot.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400&display=swap" rel="stylesheet" />
-  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet" />
-  <link rel="stylesheet" href="../styles/style.css">
+  <title>美容師テンプレート4 | recruit</title>
+  <?php get_header(); ?>
 </head>
 
 <body>
   <div id="superwrapper" class=" animsition">
     <header id="header" class="header">
       <div class="mobile-container">
-        <div class=" logo__img">
-          <a class="animsition-link" href="/">
+        <div class="logo__img">
+          <a class="animsition-link" href="<?php echo esc_url( home_url('/')); ?>">
             <div class="logo"></div>
           </a>
         </div>
@@ -34,20 +30,20 @@
       <!-- /.mobile-container -->
       <div class="pc-container">
         <div class="logo__img">
-          <a class="animsition-link" href="/">
+          <a class="animsition-link" href="<?php echo esc_url( home_url('/')); ?>">
             <div class="logo-pc logo"></div>
           </a>
         </div>
         <nav class="pc-nav">
           <ul class="pc-nav-list">
             <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link" href="/"><span>TOP</span></a>
+              <a class="pc-nav-link animsition-link" href="<?php echo esc_url( home_url('/')); ?>"><span>TOP</span></a>
             </li>
             <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link" href="/news/news.html"><span>NEWS</span></a>
+              <a class="pc-nav-link animsition-link" href="<?php echo esc_url( home_url('/news')); ?>"><span>NEWS</span></a>
             </li>
             <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link" href="/recruit/recruit.html"><span>RECRUIT</span></a>
+              <a class="pc-nav-link animsition-link" href="<?php echo esc_url( home_url('/recruit')); ?>"><span>RECRUIT</span></a>
             </li>
           </ul>
         </nav>
@@ -55,8 +51,11 @@
       <!-- /.pc-container -->
       <nav class="sp-navbtn">
         <ul class="sp-navbtn__container">
-          <li><a class="tel" href="tel:092-686-7954">電話予約<i class="icon-tel"></i></a></li>
-          <li><a class="net" target="_blank" href="https://beauty.hotpepper.jp/">オンライン予約<i class="icon-net"></i></a>
+          <li>
+            <a class="tel" href="tel:092-686-7954">電話予約<i class="icon-tel"></i></a>
+          </li>
+          <li>
+            <a class="net" target="_blank" href="https://beauty.hotpepper.jp/">オンライン予約<i class="icon-net"></i></a>
           </li>
         </ul>
       </nav>
@@ -116,8 +115,8 @@
     </main>
     <!-- /.c-recruit -->
     <footer id="footer" class="footer">
-      <div class="footer__inner appear up">
-        <div class="footer__sns item">
+      <div class="footer__inner">
+        <div class="footer__sns">
           <a href="https://www.instagram.com/" target="_blank">
             <i class="fab fa-instagram fa-2x"></i>
           </a>
@@ -125,7 +124,7 @@
             <i class="fab fa-facebook fa-2x"></i>
           </a>
         </div>
-        <div class="copyright item">&copy;shotaoumaru</div>
+        <div class="copyright">&copy;RivRound</div>
       </div>
     </footer>
     <!-- /.footer -->
@@ -133,13 +132,13 @@
       <nav class="mobile-menu__nav">
         <ul class="mobile-menu__list">
           <li class="mobile-menu__item">
-            <a class="animsition-link" href="/">TOP</a>
+            <a class="animsition-link" href="<?php echo esc_url( home_url('/')); ?>">TOP</a>
           </li>
           <li class="mobile-menu__item">
-            <a class="animsition-link" href="/news/news.html">NEWS</a>
+            <a class="animsition-link" href="<?php echo esc_url( home_url('/news')); ?>">NEWS</a>
           </li>
           <li class="mobile-menu__item">
-            <a class="animsition-link" href="/recruit/recruit.html">RECRUIT</a>
+            <a class="animsition-link" href="<?php echo esc_url( home_url('/recruit')); ?>">RECRUIT</a>
           </li>
         </ul>
         <div class="reserve-btn-wrap">
@@ -161,11 +160,7 @@
     <!-- /.mobile-menu -->
   </div>
   <!-- /.superwrapper -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <script src="/scripts/vendors/animsition.min.js"></script>
-  <script src="/scripts/libs/page.js"></script>
-  <script src="../scripts/libs/scroll-btn.js"></script>
-  <script src="../scripts/libs/mobile-menu.js"></script>
+  <?php get_template_part('includes/c-footer'); ?>
 </body>
 
 </html>
