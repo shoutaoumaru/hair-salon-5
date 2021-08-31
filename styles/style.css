@@ -2980,6 +2980,11 @@ a:visited {
   z-index: 100;
 }
 
+.swiper-button-prev,
+.swiper-button-next {
+  outline: none;
+}
+
 .swiper-button-prev button,
 .swiper-button-next button {
   color: white;
@@ -2988,18 +2993,7 @@ a:visited {
   outline: none;
   background-color: transparent;
   font-size: 10px;
-}
-
-.swiper-button-prev:active,
-.swiper-button-next:active {
-  background-color: transparent;
-  color: transparent;
-}
-
-.swiper-button-prev:active button:active,
-.swiper-button-next:active button:active {
-  background-color: transparent;
-  color: transparent;
+  outline: none;
 }
 
 .swiper-button-prev {
