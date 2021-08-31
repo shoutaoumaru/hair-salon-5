@@ -37,6 +37,17 @@
   }
 }
 
+.swiper-button-prev:active,
+.swiper-button-next:active {
+  background-color: transparent;
+  color: transparent;
+
+  & button {
+    background-color: transparent;
+    color: transparent;
+  }
+}
+
 .swiper-button-prev {
   margin-left: 15px;
 }

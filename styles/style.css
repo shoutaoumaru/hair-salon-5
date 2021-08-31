@@ -2990,6 +2990,18 @@ a:visited {
   font-size: 10px;
 }
 
+.swiper-button-prev:active,
+.swiper-button-next:active {
+  background-color: transparent;
+  color: transparent;
+}
+
+.swiper-button-prev:active button,
+.swiper-button-next:active button {
+  background-color: transparent;
+  color: transparent;
+}
+
 .swiper-button-prev {
   margin-left: 15px;
 }
