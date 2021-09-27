@@ -615,6 +615,10 @@ body {
   line-height: 1.4;
 }
 
+body.hidden {
+  overflow: hidden;
+}
+
 #main-wrapper {
   overflow: hidden;
 }
