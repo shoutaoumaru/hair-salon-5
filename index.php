@@ -356,26 +356,14 @@
     <!-- /.staff -->
     <article id="instagram" class="instagram">
       <div class="instagram__inner appear up">
-        <div class="instagram__block item">
-          <div class="instagram__num">05</div>
-          <h2 class="instagram__title">INSTAGRAM</h2>
-          <div class="instagram__img-box">
-            <div class="instagram__img">
-              <a href="https://www.instagram.com/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/images/home/style_5@sp.jpg" /></a>
-            </div>
-            <div class="instagram__img">
-              <a href="https://www.instagram.com" target="_blank"><img
-                  src="<?php echo get_template_directory_uri(); ?>/images/george-bohunicky-qJKT2rMU0VU-unsplash.jpg" /></a>
-            </div>
-            <div class="instagram__img">
-              <a href="https://www.instagram.com/" target="_blank"><img
-                  src="<?php echo get_template_directory_uri(); ?>/images/greg-trowman-jsuWg7IXx1k-unsplash.jpg" /></a>
-            </div>
-            <div class="instagram__img">
-              <a href="https://www.instagram.com/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/images/home/style_2.jpg" /></a>
-            </div>
-          </div>
+        <!-- インスタグラムフィード -->
+        <div class="sb-instagarm">
+          <div class="instagram__num">
+            <span>05</span></div>
+              <h2 class="instagram__title">INSTAGRAM</h2>
+          <?php echo apply_filters('the_content', '[instagram-feed]'); ?>
         </div>
+        <!-- インスタグラムフィード -->
       </div>
     </article>
     <!-- /.instagram -->

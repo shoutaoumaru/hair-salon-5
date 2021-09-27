@@ -27,6 +27,8 @@
 
 .swiper-button-prev,
 .swiper-button-next {
+  outline: none;
+
   & button {
     color: white;
     padding: 8px;
@@ -34,8 +36,10 @@
     outline: none;
     background-color: transparent;
     font-size: 10px;
+    outline: none;
   }
 }
+
 
 .swiper-button-prev {
   margin-left: 15px;

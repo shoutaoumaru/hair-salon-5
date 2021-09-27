@@ -1,16 +1,18 @@
 @charset "UTF-8";
-.cls-1,
-.cls-2 {
-  fill: none;
-  stroke-miterlimit: 10;
-}
-
 .cls-1 {
-  stroke: #231815;
+  fill: #0d0c0d;
 }
 
 .cls-2 {
-  stroke: #232339;
+  fill: #0e0d0d;
+}
+
+.cls-3 {
+  fill: none;
+  stroke: #fff;
+  stroke-miterlimit: 10;
+  stroke-width: 9px;
+  opacity: 1;
 }
 
 .svg-animation {
@@ -613,6 +615,10 @@ body {
   line-height: 1.4;
 }
 
+body.hidden {
+  overflow: hidden;
+}
+
 #main-wrapper {
   overflow: hidden;
 }
@@ -703,6 +709,27 @@ a:visited {
   width: 20px;
 }
 
+.more-link {
+  display: block;
+  text-align: right;
+}
+
+.more-link span {
+  display: inline-block;
+  padding-bottom: 7px;
+  border-bottom: 1px solid #707070;
+}
+
+.c-top-view {
+  height: 20vh;
+}
+
+@media (min-width: 960px) {
+  .c-top-view {
+    height: 35vh;
+  }
+}
+
 .header {
   background-color: white;
 }
@@ -714,7 +741,7 @@ a:visited {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  margin: 5vw 0 0 7vw;
+  margin: 3vw 0 0 7vw;
   height: 35px;
   width: 99px;
 }
@@ -1219,37 +1246,47 @@ a:visited {
   width: 14px;
 }
 
-.instagram__block {
+.sb-instagarm {
+  padding: 5vw 0;
+}
+
+.sb-instagarm .instagram__num {
   text-align: center;
 }
 
-.instagram__num {
+.sb-instagarm .instagram__num span {
   color: palevioletred;
   border-bottom: 3px solid palevioletred;
-  text-align: center;
   display: inline-block;
   padding-bottom: 15px;
-  margin-top: 3vh;
   margin-bottom: 3vh;
 }
 
-.instagram__title {
+.sb-instagarm .instagram__title {
   text-align: center;
   color: palevioletred;
   letter-spacing: 14px;
   font-family: "Hind Guntur", sans-serif;
+  margin-bottom: 20px;
 }
 
-.instagram__img-box {
+.sb-instagarm #sb_instagram .sb_instagram_header {
+  display: none;
+}
+
+.sb-instagarm #sb_instagram #sbi_images {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.instagram__img {
-  height: 100px;
-  width: 25%;
+.sb-instagarm #sb_instagram #sbi_images .sbi_item {
+  width: 25% !important;
 }
 
 .access {
@@ -1428,9 +1465,10 @@ a:visited {
 
 .p-news__date {
   letter-spacing: 2px;
+  border: 1px solid #f0f0f0;
   padding: 0.5vw;
+  background-color: #fafafa;
   border-radius: 5%;
-  color: #a1a1a1;
 }
 
 .p-news__tit {
@@ -1484,13 +1522,16 @@ a:visited {
 }
 
 .c-recruit {
-  padding: 15vw 0;
+  padding: 5vw 0;
   letter-spacing: 3px;
   line-height: 2;
 }
 
+.c-recruit__title {
+  margin-bottom: 20px;
+}
+
 .c-recruit__title span {
-  padding-top: 8vw;
   text-align: center;
   font-weight: 100;
   font-size: 2rem;
@@ -1498,29 +1539,20 @@ a:visited {
 }
 
 .c-recruit__title p {
-  margin-top: 10vw;
-  font-size: 0.5rem;
+  margin-top: 5vw;
+  font-size: 0.8rem;
   line-height: 2;
 }
 
-.c-recruit__list {
-  margin-top: 10vw;
-  font-size: 0.6rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+.c-recruit__item {
+  margin-bottom: 20px;
 }
 
 .c-recruit__btn {
   text-align: right;
   letter-spacing: 2px;
   line-height: 1.5;
-  font-size: 0.7rem;
+  font-size: 1rem;
   margin-top: 20px;
 }
 
@@ -1555,12 +1587,11 @@ a:visited {
 }
 
 .c-news {
-  padding-top: 25vw;
   font-size: 1rem;
 }
 
 .c-news .c-container {
-  padding: 5vw 10vw 10vw 10vw;
+  padding: 5vw 10vw;
 }
 
 .c-news .c-title02 {
@@ -1574,7 +1605,7 @@ a:visited {
   letter-spacing: 14px;
   font-family: "Hind Guntur", sans-serif;
   font-size: 1.5em;
-  margin-bottom: 80px;
+  margin-bottom: 30px;
   display: block;
 }
 
@@ -1585,18 +1616,15 @@ a:visited {
 .c-news__link {
   display: block;
   padding: 7vw 0;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.c-news__link:first-child {
+  border-top: 1px solid #ebebeb;
 }
 
 .c-news__link p {
   margin-top: 3vw;
-}
-
-.c-news__item {
-  border-bottom: 1px solid #ebebeb;
-}
-
-.c-news__item:first-child {
-  border-top: 1px solid #ebebeb;
 }
 
 .c-news .page-numbers {
@@ -1688,12 +1716,8 @@ a:visited {
   padding: 8vw 0;
 }
 
-.c-news-sl {
-  padding-top: 20vw;
-}
-
 .c-news-sl .c-container {
-  padding: 10vw 10vw 15vw 10vw;
+  padding: 10vw 10vw 5vw 10vw;
 }
 
 .c-news-sl .c-title02 {
@@ -1707,7 +1731,7 @@ a:visited {
   letter-spacing: 14px;
   font-family: "Hind Guntur", sans-serif;
   font-size: 1.5em;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   display: block;
 }
 
@@ -1718,10 +1742,6 @@ a:visited {
 
 .c-news-sl__tit {
   margin-top: 5vw;
-}
-
-.c-news-sl__list {
-  padding: 5vw 0 0 0;
 }
 
 .c-news-sl__contents {
@@ -1741,7 +1761,6 @@ a:visited {
 .c-news-sl .more-link {
   display: block;
   text-align: right;
-  padding-right: 30px;
 }
 
 .c-news-sl .more-link span {
@@ -2980,6 +2999,11 @@ a:visited {
   z-index: 100;
 }
 
+.swiper-button-prev,
+.swiper-button-next {
+  outline: none;
+}
+
 .swiper-button-prev button,
 .swiper-button-next button {
   color: white;
@@ -2988,6 +3012,7 @@ a:visited {
   outline: none;
   background-color: transparent;
   font-size: 10px;
+  outline: none;
 }
 
 .swiper-button-prev {
@@ -3194,24 +3219,6 @@ Stylesheet: 600px以上のモニタで適用
   .staff #swiper-pagination {
     bottom: -50px;
   }
-  .instagram {
-    padding: 0 10vw;
-  }
-  .instagram__num {
-    font-size: 1.4rem;
-  }
-  .instagram__title {
-    font-size: 1.4rem;
-  }
-  .instagram__img-box {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .instagram__img {
-    width: 48%;
-    height: 180px;
-    border: white 5px solid;
-  }
   .access {
     margin-top: 10vw;
     padding-bottom: 3vw;
@@ -3269,20 +3276,20 @@ Stylesheet: 600px以上のモニタで適用
   .footer__inner {
     height: 20vw;
   }
-  .c-news {
-    padding-top: 20vw;
-  }
   .c-news .c-container {
-    padding: 0 10vw 0 10vw;
+    padding: 5vw 10vw 0 10vw;
   }
   .c-news .c-title02 {
     margin-bottom: 0;
   }
   .c-news__list a {
-    padding: 3vw 0 5vw 3vw;
+    padding: 3vw 0 3vw 3vw;
   }
   .c-news .next {
     display: none;
+  }
+  .c-news .page-numbers {
+    margin: 6vw 0;
   }
   .c-news-sl .c-container {
     padding: 5vw 15vw 15vw 15vw;
@@ -3319,7 +3326,7 @@ Stylesheet: 960px以上のモニタで適用
     display: none;
   }
   .header .logo {
-    margin: 3.3vw 0 0 7vw;
+    margin: 2.3vw 0 0 7vw;
     height: 55px;
     width: 150px;
   }
@@ -3406,9 +3413,6 @@ Stylesheet: 960px以上のモニタで適用
   .staff #swiper-slide .sns-link {
     left: 180px;
     bottom: 55px;
-  }
-  .instagram__img {
-    height: 250px;
   }
   .mobile-menu__ul {
     padding-top: 30vw;
@@ -3550,10 +3554,6 @@ Stylesheet: 1200px以上のモニタで適用
   .staff .pagination-img {
     height: 280px;
   }
-  .instagram__img {
-    width: 23%;
-    height: auto;
-  }
   .p-news {
     padding: 10vw 0 5vw 0;
   }
@@ -3578,10 +3578,6 @@ Stylesheet: 1200px以上のモニタで適用
   .c-recruit {
     max-width: 1080px;
     margin: 0 auto;
-    padding-top: 0;
-  }
-  .superwrapper .c-news {
-    padding-top: 10vw;
   }
   .superwrapper .c-news__title {
     margin-bottom: 5vw;
@@ -3590,11 +3586,11 @@ Stylesheet: 1200px以上のモニタで適用
     font-size: 1.5rem;
   }
   .superwrapper .c-news__list a {
-    padding: 3vw 0 3vw 5vw;
+    padding: 2vw 0 2vw 5vw;
   }
   .superwrapper .c-news .page-numbers {
-    margin: 8vw 0;
-    font-size: 1rem;
+    margin: 5vw 0;
+    font-size: 1.3rem;
   }
   .c-news-sl {
     padding-bottom: 5vw;
