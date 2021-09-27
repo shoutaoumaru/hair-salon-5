@@ -705,6 +705,27 @@ a:visited {
   width: 20px;
 }
 
+.more-link {
+  display: block;
+  text-align: right;
+}
+
+.more-link span {
+  display: inline-block;
+  padding-bottom: 7px;
+  border-bottom: 1px solid #707070;
+}
+
+.c-top-view {
+  height: 20vh;
+}
+
+@media (min-width: 960px) {
+  .c-top-view {
+    height: 35vh;
+  }
+}
+
 .header {
   background-color: white;
 }
@@ -716,7 +737,7 @@ a:visited {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  margin: 5vw 0 0 7vw;
+  margin: 3vw 0 0 7vw;
   height: 35px;
   width: 99px;
 }
@@ -1254,6 +1275,31 @@ a:visited {
   width: 25%;
 }
 
+.instagram .more-link {
+  padding-right: 5vw;
+}
+
+.instagram .more-link span {
+  position: relative;
+  padding-left: 25px;
+  padding-bottom: 2px;
+}
+
+.instagram .more-link span::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  content: '';
+  height: 20px;
+  width: 20px;
+  display: block;
+  background-image: url(/images/common/icon-insta-gr.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 .access {
   background: #f8f6f6;
   margin-top: 15vh;
@@ -1487,13 +1533,16 @@ a:visited {
 }
 
 .c-recruit {
-  padding: 15vw 0;
+  padding: 5vw 0;
   letter-spacing: 3px;
   line-height: 2;
 }
 
+.c-recruit__title {
+  margin-bottom: 20px;
+}
+
 .c-recruit__title span {
-  padding-top: 8vw;
   text-align: center;
   font-weight: 100;
   font-size: 2rem;
@@ -1501,29 +1550,20 @@ a:visited {
 }
 
 .c-recruit__title p {
-  margin-top: 10vw;
-  font-size: 0.5rem;
+  margin-top: 5vw;
+  font-size: 0.8rem;
   line-height: 2;
 }
 
-.c-recruit__list {
-  margin-top: 10vw;
-  font-size: 0.6rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+.c-recruit__item {
+  margin-bottom: 20px;
 }
 
 .c-recruit__btn {
   text-align: right;
   letter-spacing: 2px;
   line-height: 1.5;
-  font-size: 0.7rem;
+  font-size: 1rem;
   margin-top: 20px;
 }
 
@@ -1558,12 +1598,11 @@ a:visited {
 }
 
 .c-news {
-  padding-top: 25vw;
   font-size: 1rem;
 }
 
 .c-news .c-container {
-  padding: 5vw 10vw 10vw 10vw;
+  padding: 5vw 10vw;
 }
 
 .c-news .c-title02 {
@@ -1577,7 +1616,7 @@ a:visited {
   letter-spacing: 14px;
   font-family: "Hind Guntur", sans-serif;
   font-size: 1.5em;
-  margin-bottom: 80px;
+  margin-bottom: 30px;
   display: block;
 }
 
@@ -1688,12 +1727,8 @@ a:visited {
   padding: 8vw 0;
 }
 
-.c-news-sl {
-  padding-top: 20vw;
-}
-
 .c-news-sl .c-container {
-  padding: 10vw 10vw 15vw 10vw;
+  padding: 10vw 10vw 5vw 10vw;
 }
 
 .c-news-sl .c-title02 {
@@ -1707,7 +1742,7 @@ a:visited {
   letter-spacing: 14px;
   font-family: "Hind Guntur", sans-serif;
   font-size: 1.5em;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   display: block;
 }
 
@@ -1718,10 +1753,6 @@ a:visited {
 
 .c-news-sl__tit {
   margin-top: 5vw;
-}
-
-.c-news-sl__list {
-  padding: 5vw 0 0 0;
 }
 
 .c-news-sl__contents {
@@ -1741,7 +1772,6 @@ a:visited {
 .c-news-sl .more-link {
   display: block;
   text-align: right;
-  padding-right: 30px;
 }
 
 .c-news-sl .more-link span {
@@ -3275,20 +3305,20 @@ Stylesheet: 600px以上のモニタで適用
   .footer__inner {
     height: 20vw;
   }
-  .c-news {
-    padding-top: 20vw;
-  }
   .c-news .c-container {
-    padding: 0 10vw 0 10vw;
+    padding: 5vw 10vw 0 10vw;
   }
   .c-news .c-title02 {
     margin-bottom: 0;
   }
   .c-news__list a {
-    padding: 3vw 0 5vw 3vw;
+    padding: 3vw 0 3vw 3vw;
   }
   .c-news .next {
     display: none;
+  }
+  .c-news .page-numbers {
+    margin: 6vw 0;
   }
   .c-news-sl .c-container {
     padding: 5vw 15vw 15vw 15vw;
@@ -3325,7 +3355,7 @@ Stylesheet: 960px以上のモニタで適用
     display: none;
   }
   .header .logo {
-    margin: 3.3vw 0 0 7vw;
+    margin: 2.3vw 0 0 7vw;
     height: 55px;
     width: 150px;
   }
@@ -3584,10 +3614,6 @@ Stylesheet: 1200px以上のモニタで適用
   .c-recruit {
     max-width: 1080px;
     margin: 0 auto;
-    padding-top: 0;
-  }
-  .superwrapper .c-news {
-    padding-top: 10vw;
   }
   .superwrapper .c-news__title {
     margin-bottom: 5vw;
@@ -3596,11 +3622,11 @@ Stylesheet: 1200px以上のモニタで適用
     font-size: 1.5rem;
   }
   .superwrapper .c-news__list a {
-    padding: 3vw 0 3vw 5vw;
+    padding: 2vw 0 2vw 5vw;
   }
   .superwrapper .c-news .page-numbers {
-    margin: 8vw 0;
-    font-size: 1rem;
+    margin: 5vw 0;
+    font-size: 1.3rem;
   }
   .c-news-sl {
     padding-bottom: 5vw;

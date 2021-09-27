@@ -101,7 +101,6 @@ Stylesheet: 1200px以上のモニタで適用
   }
 }
 
-
 .staff {
   & .swiper-slide {
     &__box {
@@ -167,13 +166,11 @@ Stylesheet: 1200px以上のモニタで適用
 .c-recruit {
   max-width: 1080px;
   margin: 0 auto;
-  padding-top: 0;
 }
 
 //* * * * * * news-page * * * * * * *
 .superwrapper {
   .c-news {
-    padding-top: 10vw;
 
     &__title {
       margin-bottom: 5vw;
@@ -183,13 +180,13 @@ Stylesheet: 1200px以上のモニタで適用
       font-size: 1.5rem;
 
       & a {
-        padding: 3vw 0 3vw 5vw;
+        padding: 2vw 0 2vw 5vw;
       }
     }
 
     & .page-numbers {
-      margin: 8vw 0;
-      font-size: 1rem;
+      margin: 5vw 0;
+      font-size: 1.3rem;
     }
   }
 }

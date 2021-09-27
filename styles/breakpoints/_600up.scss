@@ -332,10 +332,9 @@ Stylesheet: 600px以上のモニタで適用
 
 //* * * * * * news-page * * * * * * *
 .c-news {
-  padding-top: 20vw;
 
   & .c-container {
-    padding: 0 10vw 0 10vw;
+    padding: 5vw 10vw 0 10vw;
   }
 
   & .c-title02 {
@@ -344,12 +343,16 @@ Stylesheet: 600px以上のモニタで適用
 
   &__list {
     & a {
-      padding: 3vw 0 5vw 3vw;
+      padding: 3vw 0 3vw 3vw;
     }
   }
 
   & .next {
     display: none;
+  }
+
+  .page-numbers {
+    margin: 6vw 0;
   }
 }
 
